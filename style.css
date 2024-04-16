@@ -1,0 +1,140 @@
+html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Kanit", sans-serif;
+}
+body .top {
+  width: 100%;
+  background-color: rgb(167, 22, 22);
+  padding: 0.5rem 0 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 4px rgb(136, 13, 13);
+}
+body .top .logo {
+  display: inline-block;
+  height: 50px;
+  aspect-ratio: inherit;
+}
+body .top .topText {
+  text-align: center;
+  width: 80%;
+  font-size: 1.6rem;
+  color: white;
+}
+@media (min-width: 1024px) {
+  body .top .topText {
+    width: 95%;
+  }
+}
+body .container {
+  padding: 2rem 1rem 0 1rem;
+}
+@media (min-width: 650px) {
+  body .container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+body .container #headText {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(167, 22, 22);
+}
+body .container #headText .slash {
+  font-size: 2rem;
+}
+@media (min-width: 650px) {
+  body .container #headText .slash {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 650px) {
+  body .container #headText {
+    font-size: 2rem;
+  }
+}
+body .container .input {
+  width: 100%;
+}
+@media (min-width: 650px) {
+  body .container .input {
+    margin-top: 2.5rem;
+    max-width: 650px;
+    margin: auto;
+  }
+}
+body .container .input #name {
+  background-color: none;
+  width: 75%;
+  color: rgb(167, 22, 22);
+  border: solid 2px rgb(167, 22, 22);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Kanit", sans-serif;
+  border-radius: 7px;
+}
+body .container .input #btn {
+  border: none;
+  width: 23%;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Kanit", sans-serif;
+  border-radius: 7px;
+}
+body .container .input #btn.enabled {
+  background-color: rgb(167, 22, 22);
+  border: solid 2px rgb(167, 22, 22);
+}
+body .container .input #btn.disabled {
+  background-color: rgb(204, 193, 193);
+  border: solid 2px rgb(204, 193, 193);
+}
+body .container .roverContent {
+  margin-top: 2rem;
+}
+@media (min-width: 650px) {
+  body .container .roverContent {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+body .container .roverContent .card {
+  margin: 1rem auto 0 auto;
+  background-color: rgb(167, 22, 22);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 95%;
+}
+@media (min-width: 650px) {
+  body .container .roverContent .card {
+    flex: 0 0 45%;
+  }
+}
+@media (min-width: 1024px) {
+  body .container .roverContent .card {
+    flex: 0 0 24%;
+  }
+}
+body .container .roverContent .card .imageHere {
+  width: 100%;
+  height: 300px;
+}
+body .container .roverContent .card .imageHere .theImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+body .container .roverContent .card .cameraName {
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
